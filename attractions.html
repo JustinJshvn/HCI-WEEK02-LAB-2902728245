@@ -5,27 +5,68 @@
   <title>Yogyakarta — Attractions</title>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="history.html">History</a> |
-    <a href="attractions.html">Attractions</a>
-  </nav>
-  <hr>
-  <h1>Top Attractions</h1>
-  <p>Here are some well-known places to visit in and around Yogyakarta.</p>
-  <h2>City Highlights</h2>
-  <ul>
-    <li><strong>Tugu Yogyakarta</strong> — the city’s iconic white monument and meeting point.</li>
-    <li><strong>Jalan Malioboro</strong> — a famous street with markets, food stalls, and shops.</li>
-    <li><strong>Fort Vredeburg</strong> — a Dutch colonial-era fort and museum.</li>
-    <li><strong>Beringharjo Market</strong> — traditional market known for batik and local snacks.</li>
-  </ul>
-  <h2>Nearby World Heritage Sites</h2>
-  <ul>
-    <li><a href="https://en.wikipedia.org/wiki/Borobudur" target="_blank" rel="noopener">Borobudur</a> (Magelang)</li>
-    <li><a href="https://en.wikipedia.org/wiki/Prambanan" target="_blank" rel="noopener">Prambanan</a> (near Sleman)
-    </li>
-  </ul>
-  <p>Tip: Use the navigation links at the top to explore the site.</p>
+  <header>
+    <h1>Top Attractions</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="history.html">History</a> |
+      <a href="attractions.html">Attractions</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <p>Here are some well-known places to visit in and around Yogyakarta.</p>
+      <h2>City Highlights</h2>
+      <ul>
+        <li><strong>Tugu Yogyakarta</strong> — the city’s iconic white monument and meeting point.</li>
+        <li><strong>Jalan Malioboro</strong> — a famous street with markets, food stalls, and shops.</li>
+        <li><strong>Fort Vredeburg</strong> — a Dutch colonial-era fort and museum.</li>
+        <li><strong>Beringharjo Market</strong> — traditional market known for batik and local snacks.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Nearby World Heritage Sites</h2>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Borobudur" target="_blank" rel="noopener">Borobudur</a> (Magelang)</li>
+        <li><a href="https://en.wikipedia.org/wiki/Prambanan" target="_blank" rel="noopener">Prambanan</a> (near Sleman)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Visitor Feedback</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label>How did you hear about Yogyakarta?</label><br>
+        <input type="radio" id="social" name="source" value="social">
+        <label for="social">Social Media</label><br>
+        <input type="radio" id="friends" name="source" value="friends">
+        <label for="friends">Friends/Family</label><br>
+        <input type="radio" id="other" name="source" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="interests">Select your interests:</label><br>
+        <input type="checkbox" id="culture" name="interests" value="culture">
+        <label for="culture">Culture</label><br>
+        <input type="checkbox" id="nature" name="interests" value="nature">
+        <label for="nature">Nature</label><br>
+        <input type="checkbox" id="shopping" name="interests" value="shopping">
+        <label for="shopping">Shopping</label><br><br>
+
+        <label for="photo">Upload your trip photo:</label>
+        <input type="file" id="photo" name="photo"><br><br>
+
+        <label for="visit-date">When did you visit?</label>
+        <input type="date" id="visit-date" name="visit-date"><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Yogyakarta Info Site</p>
+  </footer>
 </body>
 </html>
